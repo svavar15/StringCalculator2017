@@ -6,9 +6,7 @@ public class Calculator {
 		if (text.equals("")){
 			return 0;
 		}
-		else 
-		{
-			if text.contains(","){
+		else if text.contains(","){
 				string numArr[] = text.split(",");
 				return sum(numArr);
 			}

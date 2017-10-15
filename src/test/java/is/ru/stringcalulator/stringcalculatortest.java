@@ -21,4 +21,8 @@ public class CalculatorTest {
 	public void testThreeNumberString(){
 		assertEquals(4, Calculator.add("1,2,1"));
 	}
+	@Test
+	public void testNewLinesBetweenNumbers(){
+		assertEquals(2, Calculator.add("1\n1"));
+	}
 }
