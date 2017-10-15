@@ -33,4 +33,9 @@ public class CalculatorTest {
 	public void testNegative(){
 		assertEquals(2, Calculator.add("1,1,-2"));
 	}
+	@Test
+	public void testBiggerThenThousand(){
+		assertEquals(3, Calculator.add("2,1001,1"));
+	}
+
 }

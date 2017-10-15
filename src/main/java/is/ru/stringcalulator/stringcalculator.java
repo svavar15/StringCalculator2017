@@ -24,6 +24,17 @@ public class Calculator {
 			}
 		return toInt(text);
 		}
+
+	private static int sum (String [] text){
+		int i = 0;
+		int sum = 0;
+		for (i;i < text.length;i++) {
+			if(toInt(text[i]) <= 1000){
+				sum += toInt(text[i]);
+			}
+		}
+		return sum;
+	}
 	private static int toInt(String text){
 		int number;
     	try {
