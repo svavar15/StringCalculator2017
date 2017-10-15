@@ -25,4 +25,8 @@ public class CalculatorTest {
 	public void testNewLinesBetweenNumbers(){
 		assertEquals(2, Calculator.add("1\n1"));
 	}
+	@Test
+	public void testBothCommaAndNL(){
+		assertEquals(4, Calculator.add("2,2\n"));
+	}
 }
