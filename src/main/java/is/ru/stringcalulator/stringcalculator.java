@@ -11,7 +11,14 @@ public class Calculator {
 				return sum(numArr);
 			}
 		}
+		else if text.contains(""){
+
+		}
 
 		return 1;
 	}
+	private static String[] splitNewLine(string text){
+		return text.split("\n");
+	}
 }
+
