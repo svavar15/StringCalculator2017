@@ -9,5 +9,16 @@ public class CalculatorTest {
 	public void testEmptyString(){
 		assertEquals(0, Calculator.add(""));
 	}
-
+	@Test
+	public void testNotEmpty1String(){
+		assertEquals(3, Calculator.add("1,2"));
+	}
+	@Test
+	public void testNotEmpty2String(){
+		assertEquals(1, Calculator.add("1"));
+	}
+	@Test
+	public void testThreeNumberString(){
+		assertEquals(4, Calculator.add("1,2,1"));
+	}
 }
