@@ -29,4 +29,8 @@ public class CalculatorTest {
 	public void testBothCommaAndNL(){
 		assertEquals(4, Calculator.add("2,2\n"));
 	}
+	@Test
+	public void testNegative(){
+		assertEquals(2, Calculator.add("1,1,-2"));
+	}
 }

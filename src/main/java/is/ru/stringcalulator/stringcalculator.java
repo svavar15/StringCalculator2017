@@ -8,15 +8,18 @@ public class Calculator {
 		}
 		if (text.contains("," && "\n")){
 			string numArr[] = text.split("\n" && ",");
+			check(numArr);
 			return sum(numArr);
 		}
 
 		if (text.contains("\n")){
 			string numArr[] = text.split("\n");
+			check(numArr);
 			return sum(numArr);
 		}
 		if (text.contains(",")){
 			string numArr[] = text.split(",");
+			check(numArr);
 			return sum(numArr);
 			}
 		return toInt(text);
@@ -30,10 +33,18 @@ public class Calculator {
         }
     	return num;
 	}
+	private static void check(String Text){
+		if(ifNegative(numArr) == true){
+				System.out.println("“Negatives not allowed: ");
+			}
+	}
+
 	private static boolean ifNegative(String text){
-
 	}	
-
+		if(toInt(text) < 0){
+			return true;
+		}
+		return false;
 	}
 
 }
