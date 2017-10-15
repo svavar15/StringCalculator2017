@@ -37,5 +37,10 @@ public class CalculatorTest {
 	public void testBiggerThenThousand(){
 		assertEquals(3, Calculator.add("2,1001,1"));
 	}
+	@Test
+	public void TestDifferentInputs(){
+		assertEquals(3, Calculator.add("//2,1"));
+	}
+
 
 }

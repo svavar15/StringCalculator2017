@@ -11,6 +11,11 @@ public class Calculator {
 			check(numArr);
 			return sum(numArr);
 		}
+		if (text.contains("//")){
+			string numArr[] = text.split("//");
+			check(numArr);
+			return sum(numArr);
+		}
 
 		if (text.contains("\n")){
 			string numArr[] = text.split("\n");
